@@ -1,1 +1,68 @@
-https://codesandbox.io/p/sandbox/42ywcv
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>The one</title>
+
+    <style>
+      body {
+        background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+        font-family: Arial, sans-serif;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+      }
+      .container {
+        background: white;
+        padding: 30px;
+        border-radius: 20px;
+        text-align: center;
+        box-shadow: 0 10px 25px tgba(0, 0, 0, 0.2);
+      }
+
+      h1 {
+        color: #e63946;
+      }
+
+      button {
+        padding: 12px 25px;
+        margin: 10px;
+        border: none;
+        border-radius: 30px;
+        font-size: 18px;
+        cursor: pointer;
+      }
+
+      .yes {
+        background: #ff4d6d;
+        color: white;
+      }
+
+      .no {
+        background: #ccc;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="countainer">
+      <h1>Dear Nini, Will you be my valentine?</h1>
+      <p>For you my dear, only you specialy</p>
+
+      <button class="yes" onclick="yes()">YESSSS</button>
+      <button class="no" onclick="no()">No sorry</button>
+
+      <h2 id="response"></h2>
+    </div>
+
+    <script>
+      function yes() {
+        document.getElementById("response").innerHTML = "Love you daring";
+      }
+      function no() {
+        document.getElementById("response").innerHTML = "It ok...";
+      }
+    </script>
+  </body>
+</html>
